@@ -1,0 +1,6 @@
+{
+  "name": "FANG — Unlocking Web3 Power",
+  "description": "FANG: 5,000 Genesis NFTs bridging artistic scarcity with a high-yield DeFi ecosystem. Mint, Stake, Swap, and Earn $FANG.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
