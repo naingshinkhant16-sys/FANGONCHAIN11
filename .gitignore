@@ -8,3 +8,4 @@ coverage/
 !.env.example
 settings.json
 wallets.json
+package-lock.json
