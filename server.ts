@@ -91,14 +91,16 @@ app.post("/api/wallet", async (req, res) => {
 
   // Attempt Google Sheet Webhook Sync if Webhook URL is set
   const settings = readJSONFile(SETTINGS_FILE, { webhookUrl: "", password: "admin" });
+  // CHANGED: prefer environment variable (works on Vercel), fall back to local settings.json (works locally)
+  const webhookUrl = process.env.WEBHOOK_URL || settings.webhookUrl;
   let webhookTriggered = false;
   let webhookSuccess = false;
   let webhookErrorMessage = "";
 
-  if (settings.webhookUrl) {
+  if (webhookUrl) {
     webhookTriggered = true;
     try {
-      const response = await fetch(settings.webhookUrl, {
+      const response = await fetch(webhookUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -185,11 +187,12 @@ app.post("/api/settings", (req, res) => {
 // API: Get webhook active status (doesn't expose the full URL or password to regular clients)
 app.get("/api/settings/status", (req, res) => {
   const settings = readJSONFile(SETTINGS_FILE, { webhookUrl: "", password: "admin" });
+  const webhookUrl = process.env.WEBHOOK_URL || settings.webhookUrl;
   res.json({
     success: true,
-    hasWebhook: !!settings.webhookUrl,
-    webhookUrlLength: settings.webhookUrl ? settings.webhookUrl.length : 0,
-    webhookMasked: settings.webhookUrl ? `${settings.webhookUrl.substring(0, 15)}...${settings.webhookUrl.slice(-5)}` : "None configured"
+    hasWebhook: !!webhookUrl,
+    webhookUrlLength: webhookUrl ? webhookUrl.length : 0,
+    webhookMasked: webhookUrl ? `${webhookUrl.substring(0, 15)}...${webhookUrl.slice(-5)}` : "None configured"
   });
 });
 
