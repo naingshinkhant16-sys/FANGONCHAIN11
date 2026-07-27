@@ -178,8 +178,8 @@ export default function App() {
                 <div className="text-lg sm:text-xl font-black text-[#ece6d6]">5,000</div>
               </div>
               <div>
-                <div className="text-[10px] text-[#a39d8c] uppercase font-bold tracking-wider">TRAIL LIST</div>
-                <div className="text-lg sm:text-xl font-black text-[#ece6d6]">0.0009 <span className="text-xs text-[#8fe38a] font-bold">ETH</span></div>
+                <div className="text-[10px] text-[#a39d8c] uppercase font-bold tracking-wider">PRICE</div>
+                <div className="text-lg sm:text-xl font-black text-[#ece6d6]">0.0008 <span className="text-xs text-[#8fe38a] font-bold">ETH</span></div>
               </div>
               <div>
                 <div className="text-[10px] text-[#a39d8c] uppercase font-bold tracking-wider">DATE</div>
