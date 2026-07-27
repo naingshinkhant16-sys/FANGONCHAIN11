@@ -164,7 +164,7 @@ app.post("/api/wallet", async (req, res) => {
 // API: Save configuration / settings (including Webhook URL)
 app.post("/api/settings", (req, res) => {
   const { webhookUrl, password, currentPassword } = req.body;
-  const settings = readJSONFile(SETTINGS_FILE, { webhookUrl: "https://script.google.com/macros/s/AKfycbxO8_BJzZrvjPjrrd0y0PfZqiAuYFTEHwjrk-BIgIm_MWl3TVjqy_tlaGQV93r10wEh/exec", password: "admin11@" });
+  const settings = readJSONFile(SETTINGS_FILE, { webhookUrl: "", password: "admin" });
 
   // Simple authentication checkpoint
   if (currentPassword !== settings.password) {
