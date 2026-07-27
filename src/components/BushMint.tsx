@@ -13,8 +13,7 @@ import image5 from "../assets/images/outcome1.png";
 import image6 from "../assets/images/outcome2.png";
 import image7 from "../assets/images/outcome3.png";
 import image8 from "../assets/images/outcome4.png";
-import wolfAvatar1 from "../assets/images/fang_wolf_avatar_1784962343730.jpg";
-import wolfAvatar2 from "../assets/images/fang_wolf_variant_two_1784991921193.jpg";
+
 import tokenLogo from "../assets/images/logo_fang.png";
 
 interface BushMintProps {
@@ -97,24 +96,7 @@ const NFT_POOL: NFTItem[] = [
     description: "A mythical frost wolf radiating sub-zero aura, capable of flash-freezing obstacles and navigating blizzard storms.",
     serial: "FANG-2024"
   },
-  {
-    id: 9,
-    name: "Apex Fang Prime",
-    rarity: "Legendary",
-    image: wolfAvatar1,
-    stats: { attack: 100, speed: 97, stealth: 88, wisdom: 100 },
-    description: "The ancestral Alpha leader of the Genesis pack, wearing golden cybernetic battle armor and wielding supreme pack authority.",
-    serial: "FANG-0001"
-  },
-  {
-    id: 10,
-    name: "Crimson Vixen",
-    rarity: "Epic",
-    image: wolfAvatar2,
-    stats: { attack: 89, speed: 98, stealth: 96, wisdom: 88 },
-    description: "A swift tactical strike specialist wearing infrared night-vision optics and specialized stealth camouflage armor.",
-    serial: "FANG-0777"
-  },
+
   {
     id: 11,
     name: "Emblem Guard",
