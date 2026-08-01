@@ -1,3 +1,19 @@
+export interface FangSpecimen {
+  id: string;
+  src: string;
+  title: string;
+  rarity: "Mythic" | "Legendary" | "Epic" | "Rare" | "Common";
+  powerScore: number;
+  element: string;
+  stats: {
+    attack: number;
+    speed: number;
+    stealth: number;
+    ferocity: number;
+  };
+  description: string;
+}
+
 export interface NFTItem {
   id: number;
   name: string;
