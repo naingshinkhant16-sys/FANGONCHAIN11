@@ -334,20 +334,8 @@ export default function App() {
                   Synthesizing digital scarcity, DeFi yield generation, and physical streetwear. Each Genesis FANG NFT provides direct access to staking pools, governance votes, and exclusive drop portals.
                 </p>
               </div>
-<<<<<<< HEAD
             </motion.div>
           </section>
-=======
-              <div>
-                <div className="text-[10px] text-[#a39d8c] uppercase font-bold tracking-wider">PRICE</div>
-                <div className="text-lg sm:text-xl font-black text-[#ece6d6]">0.0008 <span className="text-xs text-[#8fe38a] font-bold">ETH</span></div>
-              </div>
-              <div>
-                <div className="text-[10px] text-[#a39d8c] uppercase font-bold tracking-wider">DATE</div>
-                <div className="text-lg sm:text-xl font-black text-[#8fe38a]">TBA</div>
-              </div>
-            </div>
->>>>>>> c1c2221061f94cabf5e9a5d6932492814c7894ca
 
           {/* SECTION: SNEAK PEAK IMAGES WITH SPIDER-VERSE GLITCH EFFECT */}
           <section id="sneak-peak-section" className="relative z-10 py-24 bg-[#081410]">
