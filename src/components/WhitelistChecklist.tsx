@@ -5,7 +5,7 @@ import fangLogo from '../assets/images/logo_fang.png';
 
 // Customizable X (Twitter) links - update these with your official X profile & tweet URLs
 const X_PROFILE_URL = "https://x.com/fangonchain?s=11";
-const X_PINNED_POST_URL = "https://x.com/Fangonchain";
+const X_PINNED_POST_URL = "https://x.com/fangonchain/status/2081787400255390061?s=46";
 
 export default function WhitelistChecklist() {
   const [address, setAddress] = useState('');
